@@ -38,6 +38,7 @@ export default {
       italian: 'İtalyanca',
       bulgarian: 'Bulgarca',
       arabic: 'Arapça',
+      hebrew: 'İbranice',
       turkish: 'Türkçe',
       language: 'Dil',
       languageMessage: 'Lütfen dilinizi girin!',
@@ -1054,7 +1055,7 @@ Bu otomatik etiketleme özelliği, mevcut datasete alanına özgü bilgi katman�
       embedModalTitle: 'Web sayfasına göm',
       embedUserIdPlaceholder: 'örn. user-001',
       embedUserIdTooltip:
-        'Gömülü sayfanın son kullanıcısını tanımlayan bir metin (en fazla 255 karakter). Gömme URL\'sine userId parametresi olarak eklenir.',
+        "Gömülü sayfanın son kullanıcısını tanımlayan bir metin (en fazla 255 karakter). Gömme URL'sine userId parametresi olarak eklenir.",
       published: 'Yayınlandı',
       publishedTooltip: 'Bu göm için yayınlanan sürümü kullanın.',
       embedType: 'Embed türü',
@@ -1224,7 +1225,8 @@ Bu otomatik etiketleme özelliği, mevcut datasete alanına özgü bilgi katman�
         "Google Console'dan oluşturulan OAuth JSON'ını yükleyin. Yalnızca istemci kimlik bilgilerini içeriyorsa, uzun ömürlü yenileme tokenları oluşturmak için tarayıcı tabanlı doğrulamayı bir kez çalıştırın.",
       dropboxDescription:
         "Seçilen bir hesaptan dosya ve klasörleri senkronize etmek için Dropbox'ınızı bağlayın.",
-      azure_devopsDescription: "Depo dosyalarını ve pull request'leri senkronize etmek için Azure DevOps'u bağlayın.",
+      azure_devopsDescription:
+        "Depo dosyalarını ve pull request'leri senkronize etmek için Azure DevOps'u bağlayın.",
       bitbucketDescription:
         "PR içeriğini senkronize etmek için Bitbucket'ı bağlayın.",
       bitbucketTopWorkspaceTip:
@@ -2686,6 +2688,7 @@ Temel Talimatlar:
       russian: 'Rusça',
       bulgarian: 'Bulgarca',
       arabic: 'Arapça',
+      hebrew: 'İbranice',
       turkish: 'Türkçe',
     },
     pagination: {

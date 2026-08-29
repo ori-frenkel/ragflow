@@ -56,9 +56,11 @@ const VerifyButton: React.FC<IVerifyButton> = ({
   formRef,
 }) => {
   const { t, i18n } = useTranslate('setting');
-  const isArabic = (i18n.resolvedLanguage || i18n.language || '')
-    .toLowerCase()
-    .startsWith('ar');
+  const isRtl = ['ar', 'he'].some((lang) =>
+    (i18n.resolvedLanguage || i18n.language || '')
+      .toLowerCase()
+      .startsWith(lang),
+  );
   const [isVerifying, setIsVerifying] = useState(false);
   const [verifyResult, setVerifyResult] = useState<VerifyResult | null>(null);
   const contextForm = useFormContext();
@@ -125,7 +127,7 @@ const VerifyButton: React.FC<IVerifyButton> = ({
       className={cn(
         !isAbsolute || (verifyResult && verifyResult.isValid === false)
           ? 'flex flex-col gap-5 w-full '
-          : `absolute bottom-6 z-[100] ${isArabic ? 'right-6' : 'left-6'}`,
+          : `absolute bottom-6 z-[100] ${isRtl ? 'right-6' : 'left-6'}`,
         className,
       )}
     >

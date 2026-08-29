@@ -115,8 +115,21 @@ func TestSplitAnswer_Arabic(t *testing.T) {
 	}
 	for _, s := range sentences {
 		// Must be valid UTF-8 — no replacement characters or garbled bytes
-		if strings.ContainsRune(s, '�') {
+		if strings.ContainsRune(s, '\uFFFD') {
 			t.Errorf("garbled UTF-8 in Arabic sentence: %q", s)
+		}
+	}
+}
+
+func TestSplitAnswer_Hebrew(t *testing.T) {
+	// Hebrew: "שלום עולם. זהו מבחן." in Hebrew script
+	sentences, _ := splitAnswer("שלום עולם. זהו מבחן.")
+	if len(sentences) == 0 {
+		t.Fatal("expected at least 1 sentence for Hebrew")
+	}
+	for _, s := range sentences {
+		if strings.ContainsRune(s, '\uFFFD') {
+			t.Errorf("garbled UTF-8 in Hebrew sentence: %q", s)
 		}
 	}
 }

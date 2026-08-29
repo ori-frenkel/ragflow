@@ -26,6 +26,7 @@ const languageImports: Record<string, () => Promise<{ default: any }>> = {
   [LanguageAbbreviation.It]: () => import('./it'),
   [LanguageAbbreviation.Bg]: () => import('./bg'),
   [LanguageAbbreviation.Ar]: () => import('./ar'),
+  [LanguageAbbreviation.He]: () => import('./he'),
   [LanguageAbbreviation.Tr]: () => import('./tr'),
   [LanguageAbbreviation.Ko]: () => import('./ko'),
 };
@@ -54,7 +55,7 @@ const resources = {
 
 const updateDocumentLocale = (lng: string) => {
   document.documentElement.lang = lng;
-  document.documentElement.dir = 'ltr';
+  document.documentElement.dir = lng === 'ar' || lng === 'he' ? 'rtl' : 'ltr';
   dayjs.locale(lng === 'zh' ? 'zh-cn' : lng);
 };
 

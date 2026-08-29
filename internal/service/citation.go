@@ -23,9 +23,9 @@ import (
 	"strings"
 )
 
-// sentenceSplitRE splits text on Chinese / English / Arabic sentence-ending
+// sentenceSplitRE splits text on Chinese / English / Arabic / Hebrew sentence-ending
 // punctuation.  Matches the Python regex in rag/nlp/search.py:insert_citations.
-var sentenceSplitRE = regexp.MustCompile(`([^\|][；。？!！,؛؟.\n]|[a-z؀-ۿ][.?;!،؛؟][ \n])`)
+var sentenceSplitRE = regexp.MustCompile(`([^\|][；。？!！,؛؟.\n]|[a-z؀-ۿ\x{0590}-\x{05FF}][.?;!،؛؟][ \n])`)
 
 const minSentenceLen = 5
 

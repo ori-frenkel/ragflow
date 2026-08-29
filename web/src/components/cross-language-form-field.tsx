@@ -37,6 +37,7 @@ export const Languages = [
   'Korean',
   'Vietnamese',
   'Arabic',
+  'Hebrew',
   'Turkish',
   'Dutch',
 ];

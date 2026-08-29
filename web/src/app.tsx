@@ -20,6 +20,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { configResponsive } from 'ahooks';
 import dayjs from 'dayjs';
 import 'dayjs/locale/ar';
+import 'dayjs/locale/he';
 import 'dayjs/locale/tr';
 import 'dayjs/locale/zh-cn';
 import advancedFormat from 'dayjs/plugin/advancedFormat';

@@ -29,6 +29,7 @@ export default {
       russian: 'Руски',
       bulgarian: 'Български',
       arabic: 'Арабски',
+      hebrew: 'Иврит',
       language: 'Език',
       languageMessage: 'Моля, въведете вашия език!',
       languagePlaceholder: 'изберете вашия език',
@@ -1000,7 +1001,8 @@ The above is the content you need to summarize.`,
       gmailTokenTip: 'Качете OAuth JSON, генериран от Google Console.',
       dropboxDescription:
         'Свържете вашия Dropbox за синхронизиране на файлове и папки от избран акаунт.',
-      azure_devopsDescription: 'Свържете Azure DevOps, за да синхронизирате файловете на хранилището и заявките за изтегляне (pull requests).',
+      azure_devopsDescription:
+        'Свържете Azure DevOps, за да синхронизирате файловете на хранилището и заявките за изтегляне (pull requests).',
       bitbucketDescription:
         'Свържете Bitbucket за синхронизиране на PR съдържание.',
       bitbucketTopWorkspaceTip:
@@ -2403,6 +2405,7 @@ Important structured information may include: names, dates, locations, events, k
       russian: 'Руски',
       bulgarian: 'Български',
       arabic: 'Арабски',
+      hebrew: 'Иврит',
       turkish: 'Турски',
     },
     pagination: {

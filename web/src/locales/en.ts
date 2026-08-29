@@ -43,6 +43,7 @@ export default {
       italian: 'Italian',
       bulgarian: 'Bulgarian',
       arabic: 'Arabic',
+      hebrew: 'Hebrew',
       turkish: 'Turkish',
       dutch: 'Dutch',
       language: 'Language',
@@ -1592,12 +1593,18 @@ Example: Virtual Hosted Style`,
       sharepointSiteUrlTip:
         'Full URL of the SharePoint site to index, e.g. https://contoso.sharepoint.com/sites/MySite. Requires an Azure AD app with Sites.Read.All and Files.Read.All application permissions (admin consent).',
       azureDevOpsPatTip: 'A personal access token with the Code (Read) scope.',
-      azureDevOpsOrganizationTip: 'Organization name (e.g. "contoso"), or the full collection URL of a self-hosted Azure DevOps Server (e.g. https://tfs.contoso.com/DefaultCollection).',
-      azureDevOpsProjectsTip: 'Comma separated team project names. E.g., Project1,Project2',
-      azureDevOpsRepositoriesTip: 'Comma separated repositories. Use project/repo to disambiguate repositories that share a name.',
-      azureDevOpsOrganizationScopeTip: 'Every repository visible to the token in this organization will be indexed.',
-      azureDevOpsContentTypesTip: 'Choose what to index: source files, pull requests, or both.',
-      azure_devopsDescription: 'Connect Azure DevOps to sync repository files and pull requests.',
+      azureDevOpsOrganizationTip:
+        'Organization name (e.g. "contoso"), or the full collection URL of a self-hosted Azure DevOps Server (e.g. https://tfs.contoso.com/DefaultCollection).',
+      azureDevOpsProjectsTip:
+        'Comma separated team project names. E.g., Project1,Project2',
+      azureDevOpsRepositoriesTip:
+        'Comma separated repositories. Use project/repo to disambiguate repositories that share a name.',
+      azureDevOpsOrganizationScopeTip:
+        'Every repository visible to the token in this organization will be indexed.',
+      azureDevOpsContentTypesTip:
+        'Choose what to index: source files, pull requests, or both.',
+      azure_devopsDescription:
+        'Connect Azure DevOps to sync repository files and pull requests.',
       bitbucketDescription: 'Connect Bitbucket to sync PR content.',
       bitbucketTopWorkspaceTip:
         'The Bitbucket workspace to index (e.g., "atlassian" from https://bitbucket.org/atlassian/workspace ).',
@@ -2915,6 +2922,7 @@ Best for: Documents with flowing, contextually connected content — such as boo
         hi: 'Hindi',
         th: 'Thai',
         ar: 'Arabic',
+        he: 'Hebrew',
         pt: 'Portuguese',
         bn: 'Bengali',
         ms: 'Malay',
@@ -2930,7 +2938,6 @@ Best for: Documents with flowing, contextually connected content — such as boo
         vi: 'Vietnamese',
         fil: 'Filipino',
         fi: 'Finnish',
-        he: 'Hebrew',
         is: 'Icelandic',
         nb: 'Norwegian',
       },
@@ -3645,6 +3652,7 @@ Important structured information may include: names, dates, locations, events, k
       russian: 'Russian',
       bulgarian: 'Bulgarian',
       arabic: 'Arabic',
+      hebrew: 'Hebrew',
       turkish: 'Turkish',
       dutch: 'Dutch',
     },

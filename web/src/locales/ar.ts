@@ -37,6 +37,7 @@ export default {
       italian: 'الإيطالية',
       bulgarian: 'البلغارية',
       arabic: 'العربية',
+      hebrew: 'العبرية',
       language: 'اللغة',
       languageMessage: 'يرجى إدخال لغتك!',
       languagePlaceholder: 'اختر لغتك',
@@ -923,7 +924,8 @@ export default {
         'Upload the OAuth JSON generated from Google Console. If it only contains client credentials, run the browser-based verification once to mint long-lived refresh tokens.',
       dropboxDescription:
         'Connect your Dropbox to sync files and folders from a chosen account.',
-      azure_devopsDescription: 'اربط Azure DevOps لمزامنة ملفات المستودع وطلبات السحب.',
+      azure_devopsDescription:
+        'اربط Azure DevOps لمزامنة ملفات المستودع وطلبات السحب.',
       bitbucketDescription: 'Connect Bitbucket to sync PR content.',
       bitbucketTopWorkspaceTip:
         'The Bitbucket workspace to index (e.g., "atlassian" from https://bitbucket.org/atlassian/workspace ).',
@@ -2308,6 +2310,7 @@ export default {
       russian: 'الروسية',
       bulgarian: 'البلغارية',
       arabic: 'العربية',
+      hebrew: 'العبرية',
       turkish: 'التركية',
     },
     pagination: {

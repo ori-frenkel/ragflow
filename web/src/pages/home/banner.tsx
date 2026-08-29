@@ -44,7 +44,11 @@ export function NextBanner() {
   return (
     <h1
       className="text-5xl leading-normal text-left"
-      dir={i18n.language?.startsWith('ar') ? 'rtl' : 'ltr'}
+      dir={
+        i18n.language?.startsWith('ar') || i18n.language?.startsWith('he')
+          ? 'rtl'
+          : 'ltr'
+      }
     >
       <span className="font-semibold text-text-primary">
         {t('header.welcome')}{' '}

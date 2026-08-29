@@ -300,15 +300,15 @@ class Dealer:
                         i += 1
                     pieces_.append("".join(pieces[st:i]) + "\n")
                 else:
-                    # Sentence boundary regex includes Arabic punctuation (، ؛ ؟ ۔)
-                    pieces_.extend(re.split(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF][.?;!،؛؟][ \n])", pieces[i]))
+                    # Sentence boundary regex includes Arabic punctuation (، ؛ ؟ ۔) and RTL scripts (Arabic, Hebrew)
+                    pieces_.extend(re.split(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF\u0590-\u05FF][.?;!،؛؟][ \n])", pieces[i]))
                     i += 1
             pieces = pieces_
         else:
-            # Sentence boundary regex includes Arabic punctuation (، ؛ ؟ ۔)
-            pieces = re.split(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF][.?;!،؛؟][ \n])", answer)
+            # Sentence boundary regex includes Arabic punctuation (، ؛ ؟ ۔) and RTL scripts (Arabic, Hebrew)
+            pieces = re.split(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF\u0590-\u05FF][.?;!،؛؟][ \n])", answer)
         for i in range(1, len(pieces)):
-            if re.match(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF][.?;!،؛؟][ \n])", pieces[i]):
+            if re.match(r"([^\|][；。？!！،؛؟۔\n]|[a-z\u0600-\u06FF\u0590-\u05FF][.?;!،؛؟][ \n])", pieces[i]):
                 pieces[i - 1] += pieces[i][0]
                 pieces[i] = pieces[i][1:]
         idx = []

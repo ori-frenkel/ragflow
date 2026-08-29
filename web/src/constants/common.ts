@@ -73,6 +73,7 @@ export const LanguageList = [
   'Italian',
   'Bulgarian',
   'Arabic',
+  'Hebrew',
   'Turkish',
   'Dutch',
 ];
@@ -92,6 +93,7 @@ export const LanguageMap = {
   Italian: 'Italiano',
   Bulgarian: 'Български',
   Arabic: 'العربية',
+  Hebrew: 'עברית',
   Turkish: 'Türkçe',
   Dutch: 'Nederlands',
 };
@@ -111,6 +113,7 @@ export enum LanguageAbbreviation {
   It = 'it',
   Bg = 'bg',
   Ar = 'ar',
+  He = 'he',
   Tr = 'tr',
   Ko = 'ko',
   Nl = 'nl',
@@ -131,6 +134,7 @@ export const LanguageAbbreviationMap = {
   [LanguageAbbreviation.It]: 'Italiano',
   [LanguageAbbreviation.Bg]: 'Български',
   [LanguageAbbreviation.Ar]: 'العربية',
+  [LanguageAbbreviation.He]: 'עברית',
   [LanguageAbbreviation.Tr]: 'Türkçe',
   [LanguageAbbreviation.Ko]: '한국어',
   [LanguageAbbreviation.Nl]: 'Nederlands',
@@ -162,6 +166,7 @@ export const LanguageTranslationMap = {
   Ukrainian: 'uk',
   Bulgarian: 'bg',
   Arabic: 'ar',
+  Hebrew: 'he',
   Turkish: 'tr',
   Dutch: 'nl',
 };
